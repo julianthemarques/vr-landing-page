@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.linear-gradient-button {
+  background: linear-gradient(#bc3cd8, #c54b8c);
+}
+
+/* NAV EFFECTS */
+
+.liEffects {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  color: #d3d3d3;
+}
+
+.liEffects::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+  background: linear-gradient(#bc3cd8, #c54b8c);
+}
+
+.liEffects:hover {
+  color: #fff;
+}
+
+.liEffects:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
