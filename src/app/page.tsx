@@ -10,9 +10,9 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <>
-      <div className="flex max-w-[854px] mx-auto justify-center">
-        <div className="leftContainer1">
+    <div className="max-w-[854px] mx-auto justify-center">
+      <div className="flex">
+        <div>
           <div className="text-5xl mb-8">
             Let's Explore <br /> Three-Dimensional <br /> visual
           </div>
@@ -27,22 +27,35 @@ export default function Home() {
           <div className="flex mb-8">
             <Image src={peopleOnline} alt="" />
             <span className="flex items-center rounded-full h-2 w-2 ml-4 mr-4 mt-2 bg-white"></span>
-            <h1>400k people online</h1>
+            <p>400k people online</p>
           </div>
         </div>
 
-        <div className="rightContainer1">
+        <div className="">
           <Image src={cinematicImg} alt="" />
         </div>
-
-        <div className="rightContainer2">
+      </div>
+      <div className="flex">
+        <div className="flex">
           <Image src={virtualGlasses} alt="" />
           <Image src={virtualHands} alt="" />
+        </div>
+        <div>
+          <div className="text-4xl">
+            New Experience In <br /> Playing Game
+          </div>
+          <div className="mb-8 ">
+            You can try playing the game with a <br />
+            new style and of course a more real <br />
+            feel, like you are the main character <br />
+            in your game and adventure in this <br />
+            new digital world.
+          </div>
         </div>
       </div>
       <Image src={ellipseLeft} alt="" className="-z-10 absolute left-0 top-60" />
       <Image src={ellipseTop} alt="" className="-z-10 absolute left-60 top-0" />
       <Image src={ellipseRight} alt="" className="-z-10 absolute right-0 top-60" />
-    </>
+    </div>
   );
 }
