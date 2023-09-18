@@ -3,7 +3,7 @@ import { Button } from './Button';
 
 export const Header = () => {
   return (
-    <header className="flex justify-between mb-20">
+    <header className="flex justify-between mb-20 max-w-[854px] mx-auto">
       <div className="left-container">
         <LightSvg />
       </div>
