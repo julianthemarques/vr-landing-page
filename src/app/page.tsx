@@ -10,8 +10,8 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="max-w-[854px] mx-auto justify-center">
-      <div className="flex">
+    <div className="max-w-[950px] mx-auto justify-center">
+      <div className="flex justify-between">
         <div>
           <div className="text-5xl mb-8">
             Let's Explore <br /> Three-Dimensional <br /> visual
@@ -35,12 +35,12 @@ export default function Home() {
           <Image src={cinematicImg} alt="" />
         </div>
       </div>
-      <div className="flex">
+      <div className="flex w-full justify-between">
         <div className="flex">
-          <Image src={virtualGlasses} alt="" />
-          <Image src={virtualHands} alt="" />
+          <Image src={virtualGlasses} alt="" className="absolute left-[26%] top-[68%]" />
+          <Image src={virtualHands} alt="" className="absolute left-[40%] top-[80%]" />
         </div>
-        <div>
+        <div className="mt-24">
           <div className="text-4xl">
             New Experience In <br /> Playing Game
           </div>

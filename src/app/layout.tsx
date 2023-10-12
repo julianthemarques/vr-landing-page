@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${inter.variable} font-[var(--font-style)] text-white bg-[#010101] h-screen w-screen py-10 px-16`}
+        className={`${inter.className} ${inter.variable} font-[var(--font-style)] text-white bg-[#010101] h-screen py-10 px-16`}
       >
         <Header />
         {children}
