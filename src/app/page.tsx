@@ -51,6 +51,7 @@ export default function Home() {
             in your game and adventure in this <br />
             new digital world.
           </div>
+          <Button>Get it Now</Button>
         </div>
       </div>
       <Image src={ellipseLeft} alt="" className="-z-10 absolute left-0 top-60" />
