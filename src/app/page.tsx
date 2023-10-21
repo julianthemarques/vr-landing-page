@@ -2,8 +2,13 @@ import cinematicImg from '@/assets/img/cinematicVirtualReality.png';
 import ellipseLeft from '@/assets/img/ellipseLeft.png';
 import ellipseRight from '@/assets/img/ellipseRight.png';
 import ellipseTop from '@/assets/img/ellipseTop.png';
+import mixedReality1 from '@/assets/img/mixedReality1.png';
+import mixedReality2 from '@/assets/img/mixedReality2.png';
+import mixedReality3 from '@/assets/img/mixedReality3.png';
+import mixedReality4 from '@/assets/img/mixedReality4.png';
 import peopleOnline from '@/assets/img/peopleOnline.png';
 import virtualGlasses from '@/assets/img/virtualGlasses.png';
+import vrBannerExp from '@/assets/img/vrBannerExp.png';
 import virtualHands from '@/assets/img/vrUsingHands.png';
 import { Button } from '@/components/Button';
 import Image from 'next/image';
@@ -52,6 +57,16 @@ export default function Home() {
             new digital world.
           </div>
           <Button>Get it Now</Button>
+        </div>
+      </div>
+      <div className="secondPageContainer">
+        <Image src={vrBannerExp} alt="" className="mt-16"></Image>
+        <div className="text-4xl mt-10">Mixed Reality Headsets</div>
+        <div className="RealityHeadsetContainer flex">
+          <Image src={mixedReality1} alt="" className=""></Image>
+          <Image src={mixedReality2} alt="" className=""></Image>
+          <Image src={mixedReality3} alt="" className=""></Image>
+          <Image src={mixedReality4} alt="" className=""></Image>
         </div>
       </div>
       <Image src={ellipseLeft} alt="" className="-z-10 absolute left-0 top-60" />
