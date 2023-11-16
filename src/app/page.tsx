@@ -15,10 +15,10 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="max-w-[950px] mx-auto justify-center">
-      <div className="flex justify-between">
-        <div>
-          <div className="text-5xl mb-8">
+    <>
+      <div className="flex justify-between max-w-[850px] mx-auto">
+        <div className="w-full">
+          <div className="text-4xl mb-8">
             Let's Explore <br /> Three-Dimensional <br /> visual
           </div>
           <div className="text-sm mb-8">
@@ -35,12 +35,9 @@ export default function Home() {
             <p>400k people online</p>
           </div>
         </div>
-
-        <div className="">
-          <Image src={cinematicImg} alt="" />
-        </div>
+          <Image className='h-auto w-full' src={cinematicImg} alt="" />
       </div>
-      <div className="flex w-full justify-between">
+      <div className="flex justify-between max-w-[850px] mx-auto">
         <div className="flex">
           <Image src={virtualGlasses} alt="" className="absolute left-[26%] top-[68%]" />
           <Image src={virtualHands} alt="" className="absolute left-[40%] top-[80%]" />
@@ -59,7 +56,7 @@ export default function Home() {
           <Button>Get it Now</Button>
         </div>
       </div>
-      <div className="secondPageContainer">
+      <div className="max-w-[850px] mx-auto">
         <Image src={vrBannerExp} alt="" className="mt-16"></Image>
         <div className="text-4xl mt-10">Mixed Reality Headsets</div>
         <div className="RealityHeadsetContainer flex">
@@ -72,6 +69,6 @@ export default function Home() {
       <Image src={ellipseLeft} alt="" className="-z-10 absolute left-0 top-60" />
       <Image src={ellipseTop} alt="" className="-z-10 absolute left-60 top-0" />
       <Image src={ellipseRight} alt="" className="-z-10 absolute right-0 top-60" />
-    </div>
+    </>
   );
 }
